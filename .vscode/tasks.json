@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "install requirements",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} -m pip install -r ${workspaceFolder}/requirements.txt",
+            "problemMatcher": [],
+        },
+        {
+            "label": "run jupyter",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} -m jupyter notebook --notebook-dir=${workspaceFolder}",
+            "problemMatcher": [],
+        }
+    ]
+}

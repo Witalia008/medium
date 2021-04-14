@@ -1,0 +1,3 @@
+ipykernel
+notebook
+jupyter_to_medium
